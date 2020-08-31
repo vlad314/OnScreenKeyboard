@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/OnScreenKeyboard/static/css/main.0c3b5451.chunk.css",
+    "main.css": "/OnScreenKeyboard/static/css/main.6b4e796c.chunk.css",
     "main.js": "/OnScreenKeyboard/static/js/main.b4d9f922.chunk.js",
     "main.js.map": "/OnScreenKeyboard/static/js/main.b4d9f922.chunk.js.map",
     "runtime-main.js": "/OnScreenKeyboard/static/js/runtime-main.4bcdfd2e.js",
@@ -8,15 +8,15 @@
     "static/js/2.a8cce41f.chunk.js": "/OnScreenKeyboard/static/js/2.a8cce41f.chunk.js",
     "static/js/2.a8cce41f.chunk.js.map": "/OnScreenKeyboard/static/js/2.a8cce41f.chunk.js.map",
     "index.html": "/OnScreenKeyboard/index.html",
-    "precache-manifest.cae1e5d309d918edd2547f26c86870b0.js": "/OnScreenKeyboard/precache-manifest.cae1e5d309d918edd2547f26c86870b0.js",
+    "precache-manifest.391c6edae64df803077fa1daf946d067.js": "/OnScreenKeyboard/precache-manifest.391c6edae64df803077fa1daf946d067.js",
     "service-worker.js": "/OnScreenKeyboard/service-worker.js",
-    "static/css/main.0c3b5451.chunk.css.map": "/OnScreenKeyboard/static/css/main.0c3b5451.chunk.css.map",
+    "static/css/main.6b4e796c.chunk.css.map": "/OnScreenKeyboard/static/css/main.6b4e796c.chunk.css.map",
     "static/js/2.a8cce41f.chunk.js.LICENSE.txt": "/OnScreenKeyboard/static/js/2.a8cce41f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4bcdfd2e.js",
     "static/js/2.a8cce41f.chunk.js",
-    "static/css/main.0c3b5451.chunk.css",
+    "static/css/main.6b4e796c.chunk.css",
     "static/js/main.b4d9f922.chunk.js"
   ]
 }
