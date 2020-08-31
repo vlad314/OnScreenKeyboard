@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/OnScreenKeyboard/static/css/main.0c3b5451.chunk.css",
+    "main.js": "/OnScreenKeyboard/static/js/main.b4d9f922.chunk.js",
+    "main.js.map": "/OnScreenKeyboard/static/js/main.b4d9f922.chunk.js.map",
+    "runtime-main.js": "/OnScreenKeyboard/static/js/runtime-main.4bcdfd2e.js",
+    "runtime-main.js.map": "/OnScreenKeyboard/static/js/runtime-main.4bcdfd2e.js.map",
+    "static/js/2.a8cce41f.chunk.js": "/OnScreenKeyboard/static/js/2.a8cce41f.chunk.js",
+    "static/js/2.a8cce41f.chunk.js.map": "/OnScreenKeyboard/static/js/2.a8cce41f.chunk.js.map",
+    "index.html": "/OnScreenKeyboard/index.html",
+    "precache-manifest.cae1e5d309d918edd2547f26c86870b0.js": "/OnScreenKeyboard/precache-manifest.cae1e5d309d918edd2547f26c86870b0.js",
+    "service-worker.js": "/OnScreenKeyboard/service-worker.js",
+    "static/css/main.0c3b5451.chunk.css.map": "/OnScreenKeyboard/static/css/main.0c3b5451.chunk.css.map",
+    "static/js/2.a8cce41f.chunk.js.LICENSE.txt": "/OnScreenKeyboard/static/js/2.a8cce41f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4bcdfd2e.js",
+    "static/js/2.a8cce41f.chunk.js",
+    "static/css/main.0c3b5451.chunk.css",
+    "static/js/main.b4d9f922.chunk.js"
+  ]
+}
