@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react';
 import Box from "../components/box.js";
 import Keyboard from "../components/keyboard.js";
 import History from "../components/history.js";
+import  "./Core.css";
 
 const Core = props => {
 
@@ -11,7 +12,7 @@ const Core = props => {
  const [historyState, setHistoryState] = useState([{}]);
 
   const addStateHandler = () => {
-    let temp = {... inputState};
+    let temp = {...inputState};
     let tempList = [...historyState];
     console.log("tempList");
     console.log(tempList);
@@ -19,16 +20,24 @@ const Core = props => {
     setHistoryState(tempList);
   }
 
-  const pressKey = character => {
+    const pressKey = character => {
     let before = "";
     let after = "";
     let newTextString = "";
-  if (character === "Caps"){
+    if (character === "CapsLock"){
       setInputState(prevInputState => ({
         currentCh: prevInputState.currentCh, 
         textString: prevInputState.textString, 
         cursorPos:prevInputState.cursorPos,
         uppercase: !prevInputState.uppercase})
+      );
+    }
+    else if (character === "Reset"){
+      setInputState(prevInputState => ({
+        currentCh: character, 
+        textString: "", 
+        cursorPos:prevInputState.cursorPos-1,
+        uppercase: prevInputState.uppercase})
       );
     }
     else if (character === "Backspace"){
@@ -45,7 +54,6 @@ const Core = props => {
     }
     else {
       before = inputState.textString.substr(0,inputState.cursorPos);
-      // console.log(before);
       after = inputState.textString.substr(inputState.cursorPos);//change to cursorPos+1 for Insert
       newTextString = newTextString.concat(before);
       if (inputState.uppercase === true){
@@ -72,20 +80,32 @@ const Core = props => {
 
   return(
     <>
-      <div className="wrapper">
-        <Box 
-          text={inputState.textString}
-          updateCursor={placeCursor}
-          getCursor={inputState.cursorPos}
-        />
-        <Keyboard 
-          onPressKey={pressKey}
-          caps = {inputState.uppercase}
-        />
-        <History className="history"
-          history={historyState}
-          addState={addStateHandler}
-        />
+      <div className="wrapper"> 
+       <div className="bkwr">
+         <div className="title" >After you've typed some text, you can place the cursor anywhere on the text to change it.</div>
+        <div className="box">
+          <Box 
+            text={inputState.textString}
+            updateCursor={placeCursor}
+            getCursor={inputState.cursorPos}
+          />
+        </div>
+        <div className="keyb">
+          <Keyboard 
+            onPressKey={pressKey}
+            caps = {inputState.uppercase}
+          />
+        </div>
+        </div>
+        <div className="hist">
+        <div className="history">
+         
+          <History 
+            history={historyState}
+            addState={addStateHandler}
+          />
+          </div>
+        </div>
       </div>
     </>
   )
