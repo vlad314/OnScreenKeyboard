@@ -1,7 +1,99 @@
 .key{
-  width: 30px;
-  height: 30px;
-  background-color: #e1e8ee;
+  flex: 1 1 0px;
+  /* width: auto; */
+  /* height: 30px; */
+  background-color: #ffffff;
+  border-radius: 6px;
+  margin: 0 3px;
+  border: none;
+}
+
+.key:hover{
+  flex: 1 1 0px;
+  background-color: yellow;
+  border-radius: 6px;
+  margin: 0 3px;
+  border: none;
+}
+
+.keyRst{
+  flex: 1 1 auto;
+  background-color: #e23333;
+  border-radius: 6px;
+  margin: 0 3px;
+  border: none;
+  color:white;
+}
+
+.keyInsert{
+  flex: 1 1 auto;
+  background-color: white;
+  border-radius: 6px;
+  margin: 0 3px;
+  border: none;
+  color:white;
+}
+
+
+.keyBkp{
+  flex: 1 1 10px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  margin: 0 3px;
+  border: none;
+}
+
+.keyBkp:hover{
+  flex: 1 1 10px;
+  background-color:  yellow;
+  border-radius: 6px;
+  margin: 0 3px;
+  border: none;
+}
+
+.keyBksl{
+  flex: 1 1 0px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  margin: 0 3px;
+  border: none;
+}
+
+.keyBksl:hover{
+  flex: 1 1 0px;
+  background-color: yellow;
+  border-radius: 6px;
+  margin: 0 3px;
+  border: none;
+}
+
+.keyInv{
+  flex: 1 1 auto;
+  background-color: #9f9f9f;
+  border-radius: 6px;
+  margin: 0 3px;
+  border: none;
+}
+
+.keyInvLong{
+  flex: 1 1 50px;
+  background-color: #f8d487;
+  border-radius: 6px;
+  margin: 0 3px;
+  border: none;
+} 
+
+.keyCaps{
+  flex: 0 1 auto;
+  background-color: #ffffff;
+  border-radius: 6px;
+  margin: 0 3px;
+  border: none;
+}
+
+.keyCaps:hover{
+  flex: 0 1 auto;
+  background-color: yellow;
   border-radius: 6px;
   margin: 0 3px;
   border: none;

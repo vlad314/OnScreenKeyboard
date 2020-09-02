@@ -1,16 +1,21 @@
 import React from 'react';
 
 import Key from './keys/key.js';
-import "./keyboard.css";
+import classes from "./keyboard.module.css";
 
 const Keyboard = ({caps, onPressKey}) => {
   //for encrypting the text
-  let row1 = ['1','2','3','4','5','6','7','8','9','0','(',')'];
+  let row10 = ['1','2','3','4','5','6','7','8','9','0'];//,'(',')'];
+  let row11 = ['(',')'];
   let keyBkp = 'Backspace';
-  let row2 = ['q','w','e','r','t','y','u','i','o','p','{','}'];
-  let row3 = ['a','s','d','f','g','h','j','k','l',';','@'];
+  let row20 = ['q','w','e','r','t','y','u','i','o','p'];//,'{','}'];
+  let row21 = ['{','}'];
+  let row30 = ['a','s','d','f','g','h','j','k','l']//,';','@'];
+  let row31  = [';','@','#'];
   let keyCaps = 'CapsLock';
-  let row4 = ['z','x','c','v','b','n','m',',','.','?'];
+  let keyBksl = ['\\'];
+  let row40 = ['z','x','c','v','b','n','m'];
+  let row41 = [',','.','?'];
   let Space = ' ';
 
   // let keys = {keyA:chars[0], keyB:chars[1]};
@@ -19,44 +24,83 @@ const Keyboard = ({caps, onPressKey}) => {
 
   return (
     <>
-      <div className="keyboardGrid">
+      <div className={classes.keyboardGrid}>
 
-        <div className="kbrow1">
-          {row1.map((el, index) => {
+        <div className={classes.kbrow1}>
+          <div className={classes.longRow}>
+          <Key   classN="keyRst" buttonId="Reset" onPressKey={onPressKey} />
+          {row10.map((el, index) => {
               console.log("el");
               console.log(el);
-              return <Key key={index}  className="key" buttonId={el} onPressKey={onPressKey} />
+              return <Key key={index} classN="key" buttonId={el} onPressKey={onPressKey} />
             })}
-            <Key   className="key" buttonId={keyBkp} onPressKey={onPressKey} />
-        </div>
-
-        <div className="kbrow2">
-          {row2.map((el, index) => {
+            </div>
+            <div className={classes.shortRow}>
+            {row11.map((el, index) => {
               console.log("el");
               console.log(el);
-              return <Key key={index}  className="key" buttonId={el} onPressKey={onPressKey}/>
+              return <Key key={index} classN="key" buttonId={el} onPressKey={onPressKey} />
             })}
+            </div>
+            <Key   classN="keyBkp" buttonId={keyBkp} onPressKey={onPressKey} />
         </div>
 
-        <div className="kbrow3">
-          {row3.map((el, index) => {
+        <div className={classes.kbrow2}>
+        <Key  classN="keyInv" buttonId="" onPressKey={onPressKey} />
+          <div className={classes.longRow}>
+            {row20.map((el, index) => {
+                console.log("el");
+                console.log(el);
+                return <Key key={index}  classN="key" buttonId={el} onPressKey={onPressKey}/>
+              })}
+          </div>
+          <div className={classes.shortRow}>
+            {row21.map((el, index) => {
+                console.log("el");
+                console.log(el);
+                return <Key key={index}  classN="key" buttonId={el} onPressKey={onPressKey}/>
+              })}
+          </div>
+          <Key   classN="keyInv" buttonId="" onPressKey={onPressKey} />
+        </div>
+
+        <div className={classes.kbrow3}>
+        <Key   classN="keyCaps" buttonId={keyCaps} onPressKey={onPressKey} />
+          <div className={classes.longRow}>
+            {row30.map((el, index) => {
+                console.log("el");
+                console.log(el);
+                return <Key key={index}  classN="key" buttonId={el}  onPressKey={onPressKey}/>
+              })}
+          </div>
+          <div className={classes.shortRow}>
+            {row31.map((el, index) => {
+                console.log("el");
+                console.log(el);
+                return <Key key={index}  classN="key" buttonId={el}  onPressKey={onPressKey}/>
+              })}
+          </div> 
+        </div>
+
+        <div className={classes.kbrow4}>
+        <Key  classN="keyBksl" buttonId={keyBksl} onPressKey={onPressKey} />
+          <div className={classes.longRow}>
+            {row40.map((el, index) => {
               console.log("el");
               console.log(el);
-              return <Key key={index}  className="key" buttonId={el}  onPressKey={onPressKey}/>
+              return <Key key={index}  classN="key" buttonId={el} onPressKey={onPressKey}/>
             })}
-            <Key   className="key" buttonId={keyCaps} onPressKey={onPressKey} />
+          </div>
+          <div className={classes.shortRow}>
+            {row41.map((el, index) => {
+              console.log("el");
+              console.log(el);
+              return <Key key={index}  classN="key" buttonId={el} onPressKey={onPressKey}/>
+            })}
+          </div>
         </div>
-
-        <div className="kbrow4">
-          {row4.map((el, index) => {
-            console.log("el");
-            console.log(el);
-            return <Key key={index}  className="key" buttonId={el} onPressKey={onPressKey}/>
-          })}
-        </div>
-
-        <div className="spaceBar">
-          <Key  className="key" buttonId={Space} onPressKey={onPressKey} />
+        <div className={classes.spaceBar}>
+          <Key  classN="key" buttonId={Space} onPressKey={onPressKey} />
         </div>
       </div>
     </>
@@ -64,9 +108,3 @@ const Keyboard = ({caps, onPressKey}) => {
 }
 
 export default Keyboard;
-
-
-// {/* 
-//           <Key  className="key" buttonId={row1[0]} onPressKey={onPressKey} />
-//           <Key  className="key"  buttonId={row1[0]} onPressKey={onPressKey} />
-//           <Key  className="key" buttonId={row1[0]} onPressKey={onPressKey} /> */}

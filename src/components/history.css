@@ -1,0 +1,38 @@
+.hItems{
+  /* background-color: rgba(0,0,220,0.6);
+  border-radius: 25px; */
+  /* border: 2px solid #00df00; */
+  margin: 1%;
+  padding:1%;
+  width:100%;
+  text-align: left;
+  position:relative;
+  /* box-sizing:border-box; */
+}
+
+.hItem{
+  border-bottom: 2px solid #8f8f8f;
+  margin:5%;
+  width:80%;
+  height:auto;
+  overflow-wrap: anywhere;
+}
+
+.wrhItems{
+  position:relative;
+  width:90%;
+  text-align: center;
+}
+
+.save{
+  border: 2px solid rgba(0,0,220,0.6);
+  border-radius: 5px;
+  background-color: white;
+}
+
+.save:hover{
+  border: 2px solid rgba(0,0,220,0.6);
+  border-radius: 5px;
+  background-color:  rgba(0,0,160,0.6);
+  color: white;
+}

@@ -1,4 +1,5 @@
 import React, {useEffect, useRef} from 'react';
+import './box.css';
 
 const Box = ({text, updateCursor, getCursor}) => {
   
@@ -18,7 +19,7 @@ const Box = ({text, updateCursor, getCursor}) => {
 
   return (
     <>
-    <textarea value={text}  onClick={cursorSel} ref={textBox} />
+    <textarea className="textBox" value={text}  onClick={cursorSel} ref={textBox} />
     </>
   )
 }
