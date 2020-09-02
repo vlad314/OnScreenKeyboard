@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/OnScreenKeyboard/static/css/main.6b4e796c.chunk.css",
-    "main.js": "/OnScreenKeyboard/static/js/main.b4d9f922.chunk.js",
-    "main.js.map": "/OnScreenKeyboard/static/js/main.b4d9f922.chunk.js.map",
+    "main.css": "/OnScreenKeyboard/static/css/main.b1ef36cb.chunk.css",
+    "main.js": "/OnScreenKeyboard/static/js/main.678bb46a.chunk.js",
+    "main.js.map": "/OnScreenKeyboard/static/js/main.678bb46a.chunk.js.map",
     "runtime-main.js": "/OnScreenKeyboard/static/js/runtime-main.4bcdfd2e.js",
     "runtime-main.js.map": "/OnScreenKeyboard/static/js/runtime-main.4bcdfd2e.js.map",
-    "static/js/2.a8cce41f.chunk.js": "/OnScreenKeyboard/static/js/2.a8cce41f.chunk.js",
-    "static/js/2.a8cce41f.chunk.js.map": "/OnScreenKeyboard/static/js/2.a8cce41f.chunk.js.map",
+    "static/js/2.5122393c.chunk.js": "/OnScreenKeyboard/static/js/2.5122393c.chunk.js",
+    "static/js/2.5122393c.chunk.js.map": "/OnScreenKeyboard/static/js/2.5122393c.chunk.js.map",
     "index.html": "/OnScreenKeyboard/index.html",
-    "precache-manifest.391c6edae64df803077fa1daf946d067.js": "/OnScreenKeyboard/precache-manifest.391c6edae64df803077fa1daf946d067.js",
+    "precache-manifest.b125469a79635c402a1e2c5ceb792b3d.js": "/OnScreenKeyboard/precache-manifest.b125469a79635c402a1e2c5ceb792b3d.js",
     "service-worker.js": "/OnScreenKeyboard/service-worker.js",
-    "static/css/main.6b4e796c.chunk.css.map": "/OnScreenKeyboard/static/css/main.6b4e796c.chunk.css.map",
-    "static/js/2.a8cce41f.chunk.js.LICENSE.txt": "/OnScreenKeyboard/static/js/2.a8cce41f.chunk.js.LICENSE.txt"
+    "static/css/main.b1ef36cb.chunk.css.map": "/OnScreenKeyboard/static/css/main.b1ef36cb.chunk.css.map",
+    "static/js/2.5122393c.chunk.js.LICENSE.txt": "/OnScreenKeyboard/static/js/2.5122393c.chunk.js.LICENSE.txt",
+    "static/media/Core.css": "/OnScreenKeyboard/static/media/background.7ee6b9e0.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.4bcdfd2e.js",
-    "static/js/2.a8cce41f.chunk.js",
-    "static/css/main.6b4e796c.chunk.css",
-    "static/js/main.b4d9f922.chunk.js"
+    "static/js/2.5122393c.chunk.js",
+    "static/css/main.b1ef36cb.chunk.css",
+    "static/js/main.678bb46a.chunk.js"
   ]
 }
